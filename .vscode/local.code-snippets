@@ -29,7 +29,7 @@
     "scope": "css",
     "prefix": "sep, separator",
     "body": [
-      "/* ${1:${TM_DIRECTORY}/(.*)/${1:/upcase}/}",
+      "/* ${1/(.*)/${1:/upcase}/} ${1:SECTION NAME}",
       "\t ============================= */\n\n$0"
     ]
   },
