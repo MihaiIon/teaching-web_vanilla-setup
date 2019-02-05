@@ -99,6 +99,10 @@ ul {
   background-color: black;
 }
 
+#header button i {
+  margin-right: 10px;
+}
+
 /* Feature
    ============================= */
 
