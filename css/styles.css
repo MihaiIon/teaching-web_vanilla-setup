@@ -1,0 +1,108 @@
+/**
+ * Table of Content
+ *
+ *  > General
+ *  > Header
+ *  > Feature
+ *
+ * ============================= */
+
+/* General
+   ============================= */
+
+body {
+  margin: 0;
+}
+
+section,
+header,
+footer {
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header
+   ============================= */
+
+#header {
+  height: 150px;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: white;
+}
+
+#header img,
+#header nav {
+  height: 70px;
+}
+
+/* ===NAVIGATION=== */
+
+#header nav {
+  display: flex;
+}
+
+#header ul {
+  display: flex;
+
+  list-style-type: none;
+}
+
+#header a,
+#header button {
+  color: black;
+
+  font-weight: 200;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+#header a {
+  height: 100%;
+  display: block;
+
+  line-height: 70px;
+
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+#header a:hover {
+  color: #48dbdc;
+}
+
+/* ===BUTTON=== */
+
+#header button {
+  margin-left: 30px;
+  padding: 20px 40px;
+
+  border: none;
+  background-color: #48dbdc;
+}
+
+#header button:hover {
+  color: white;
+  background-color: black;
+}
+
+/* Feature
+   ============================= */
+
+#feature {
+  height: 580px;
+  background-color: #48dbdc;
+}
