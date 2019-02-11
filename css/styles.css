@@ -25,6 +25,38 @@ ul {
   padding: 0;
 }
 
+a,
+button,
+h1,
+h2,
+h3 {
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  font-weight: 200;
+}
+
+h1,
+h2 {
+  font-size: 50px;
+  line-height: 65px;
+  text-align: center;
+  margin-bottom: 80px;
+  font-stretch: condensed;
+}
+
+.ultra-h1 {
+  font-size: 70px;
+  line-height: 85px;
+  margin-bottom: 120px;
+  transform: scale(1, 1.5);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0;
+}
+
 /* Header
    ============================= */
 
@@ -64,7 +96,6 @@ ul {
   font-weight: 200;
   font-size: 22px;
   text-transform: uppercase;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 
   cursor: pointer;
   transition: all 0.25s ease;
@@ -107,6 +138,49 @@ ul {
    ============================= */
 
 #feature {
-  height: 580px;
   background-color: #48dbdc;
+}
+
+#feature h1 {
+}
+
+#laptop .screen {
+  width: 800px;
+  height: 500px;
+  border-radius: 12px;
+  border: solid white 38px;
+}
+
+/* LAYOUT
+   ============================= */
+
+#layout h1 {
+}
+
+#layout ul {
+  display: flex;
+}
+
+#layout li {
+  width: 550px;
+  height: 700px;
+  border: solid white 20px;
+  cursor: pointer;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../assets/placeholder.png");
+
+  transition: 0.25s ease;
+  transform: translateY(0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#layout li:hover {
+  transform: translateY(-1%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#layout li:nth-child(1) {
+  margin-right: 50px;
 }
