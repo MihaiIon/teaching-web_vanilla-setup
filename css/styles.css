@@ -25,6 +25,10 @@ ul {
   padding: 0;
 }
 
+p {
+  font-family: sans-serif;
+}
+
 a,
 button,
 h1,
@@ -36,18 +40,19 @@ h3 {
 
 h1,
 h2 {
-  font-size: 50px;
-  line-height: 65px;
+  font-size: 55px;
+  line-height: 70px;
   text-align: center;
   margin-bottom: 80px;
   font-stretch: condensed;
+  transform: scale(1, 1.5);
 }
 
 .ultra-h1 {
-  font-size: 70px;
-  line-height: 85px;
+  font-size: 80px;
+  line-height: 100px;
   margin-bottom: 120px;
-  transform: scale(1, 1.5);
+  color: #eb2ab8;
 }
 
 section {
@@ -62,7 +67,7 @@ section {
 
 #header {
   height: 150px;
-  padding: 0 20px;
+  padding: 0 60px;
   box-sizing: border-box;
 
   display: flex;
@@ -141,9 +146,6 @@ section {
   background-color: #48dbdc;
 }
 
-#feature h1 {
-}
-
 #laptop .screen {
   width: 800px;
   height: 500px;
@@ -162,7 +164,7 @@ section {
 }
 
 #layout li {
-  width: 550px;
+  width: 400px;
   height: 700px;
   border: solid white 20px;
   cursor: pointer;
@@ -178,9 +180,107 @@ section {
 
 #layout li:hover {
   transform: translateY(-1%);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
 #layout li:nth-child(1) {
   margin-right: 50px;
+}
+
+/* NEVER STOPS
+   ============================= */
+
+#never-stops {
+  background-color: #e5e5e5;
+}
+#never-stops ul {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+#never-stops li {
+  width: 300px;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transform: translateY(0);
+  transition: 0.25s ease;
+
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0);
+}
+
+#never-stops li:hover {
+  transform: translateY(-2%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+#never-stops li:not(:last-child) {
+  margin-right: 25px;
+}
+
+#never-stops i {
+  font-size: 85px;
+  position: relative;
+  z-index: 1;
+}
+
+#never-stops p {
+  font-size: 20px;
+  margin: 18px 0;
+
+  font-weight: 200;
+  font-family: sans-serif;
+  text-align: center;
+
+  color: #989898;
+}
+
+#never-stops li > div {
+  text-align: center;
+}
+
+#never-stops .icon {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#never-stops .icon:before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#never-stops ul:nth-child(even) .icon:before {
+  top: 0;
+}
+
+#never-stops ul:nth-child(odd) .icon:before {
+  bottom: 0;
+}
+
+#never-stops li:nth-child(even) .icon:before {
+  left: 0;
+}
+
+#never-stops li:nth-child(odd) .icon:before {
+  right: 0;
+}
+
+#never-stops ul:nth-child(odd) li:nth-child(even) .icon:before,
+#never-stops ul:nth-child(even) li:nth-child(odd) .icon:before {
+  background-color: rgba(42, 237, 238, 0.78);
+}
+
+#never-stops ul:nth-child(odd) li:nth-child(odd) .icon:before,
+#never-stops ul:nth-child(even) li:nth-child(even) .icon:before {
+  background-color: rgba(241, 16, 172, 0.74);
 }
