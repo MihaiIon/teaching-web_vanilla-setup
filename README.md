@@ -1,6 +1,4 @@
-# Teaching Web
-
-## Vanilla Setup
+# Teaching Web | Vanilla Setup
 
 This repository is used for teaching new students how to build a website.
 
